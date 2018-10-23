@@ -1,0 +1,3 @@
+{
+    "name": "interactive-display", "version": "1.0.0", "keywords": ["util", "functional", "server", "client", "browser"], "author": "Alex Seif <me@alexseif.com>", "contributors": [], "dependencies": {}
+}

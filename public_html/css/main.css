@@ -1,0 +1,46 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+  margin-top: 10vh;
+  height: 100vh;
+  overflow: hidden;
+}
+.navbar-brand{
+  height: 10vh;
+}
+.navbar-brand>img{
+  display: inline-block;
+}
+.footer{
+  padding: 10px 0;
+  height: 10vh;
+}
+.navbar-inverse{color: #FFF;}
+.content{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: auto;
+}
+
+
+.carousel-control{
+  width: 5%;
+  background: none !important;
+  color: #666;
+}
+.carousel-indicators{
+  bottom: -40px;
+}
+.carousel-indicators li{
+  border-color: #666;
+}
+.carousel-inner .item{
+  width: 90vw;
+  margin: 0 auto;
+}
