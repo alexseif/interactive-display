@@ -8,16 +8,32 @@ body{
   overflow: hidden;
   background: #333;
 }
+#header, #footer{
+  position:fixed;
+  display:block;
+  width: 100%;
+  background: #333;
+  z-index:9;
+  text-align:center;
+  color: #f2f2f2;
+  margin: 0px !important;
+}
+#header{
+  height: 90px;
+  top:0px;
+}
+#footer{
+  height: 100px;
+  bottom:0px;
+}
+.footer{height: 100%}
 .navbar-brand{
   height: 90px;
 }
 .navbar-brand>img{
   display: inline-block;
 }
-.footer{
-  padding: 10px 0;
-  height: 10vh;
-}
+
 .navbar-inverse{color: #FFF;}
 section {
   width: 100%;
@@ -25,13 +41,15 @@ section {
 }
 
 .content{
-  height: 80vh;
+  height: calc(100vh - 180px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  width: 50vw;
+  /*width: 50vw;*/
   margin: auto;
+  /*overflow-y: scroll;*/
+  margin-top: -20px;
 }
 
 
@@ -69,4 +87,45 @@ section {
 
 a:hover .vehicles{
   background-image: url(/img/icons/car-blue.png);
+}
+
+/*Footer menu*/
+.footer{
+  /*height: 90px;*/
+}
+#footer-navbar{
+  text-align: center;
+}
+#footer-navbar .glyphicon{
+  font-size: 3em;
+  display: block;
+  margin-bottom: 5px;
+}
+#footer-navbar{
+  width: 450px;
+  margin: auto;
+}
+
+#footer-navbar>.nav>li:before
+{
+  content: " ";
+  width: 1px;
+  height: 80%;
+  background: #808080;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#footer-navbar>.nav>li:last-child:after{
+  content: " ";
+  width: 1px;
+  height: 80%;
+  background: #808080;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#footer-navbar>.nav>li>a{
+  margin-left: 5px;
+  margin-right: 5px;
 }

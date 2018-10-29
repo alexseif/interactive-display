@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/srv/www/interactive-display/public_html/index.php</file>
             <file>file:/srv/www/interactive-display/public_html/template/nav.php</file>
+            <file>file:/srv/www/interactive-display/public_html/index.php</file>
+            <file>file:/srv/www/interactive-display/public_html/glc.php</file>
             <file>file:/srv/www/interactive-display/public_html/css/main.css</file>
-            <file>file:/srv/www/interactive-display/public_html/template/head.php</file>
-            <file>file:/srv/www/interactive-display/public_html/template/footer-js.php</file>
+            <file>file:/srv/www/interactive-display/public_html/template/car-footer.php</file>
+            <file>file:/srv/www/interactive-display/public_html/template/footer.php</file>
         </group>
     </open-files>
 </project-private>

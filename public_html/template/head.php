@@ -9,9 +9,10 @@
     <title>Mercedes-Benz Interactive Display</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/" />    
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+    
+    <link href="js/vendor/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="js/vendor/fullPage.js-master/dist/fullpage.min.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.icon-large.min.css" >
