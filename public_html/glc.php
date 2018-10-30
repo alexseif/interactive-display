@@ -13,6 +13,61 @@
 
     .grid{width: 80vw; margin: 0 auto;}
     .grid-cell{width: 14vw;display: inline-block; margin: 0 10px;height: 35vh;}
+
+
+    /*Side Panel*/ 
+    /* panel layout mechanics */
+    .panel-wrap {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 30em;
+      transform: translateX(100%);
+      transition: .3s ease-out;
+    }
+    .panel {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #333;
+      color: #eee;
+      overflow: auto;
+      padding: 1em;
+    }
+
+    /* simulate panel state control --
+    this can also be triggered by a 
+    class name added to the body tag. 
+    Just using a checkbox sibling here
+    for simplicity
+    */ 
+    [type="checkbox"]:checked ~ .panel-wrap {
+      transform: translateX(0%);
+    }
+
+
+    /* demo display */
+    *,*:before, *:after {box-sizing: border-box;}
+
+    body {
+      font-family: sans-serif;
+      font-size: 18px;
+    }
+    h3 {
+      margin: 0;
+    }
+    p {
+      line-height: 1.4;
+      margin: 2em 0 0 0;
+    }
+    [type="checkbox"] {
+      font-size: 1em;
+    }
+
+
   </style>
   <div id="fullpage">
     <div class="content"> 
@@ -79,10 +134,25 @@
         </div>
       </div>
       <div id="specs" class="section">
+        <div class="slide">
 
+          <input id="clicker" type="checkbox" />
+
+        </div>
       </div>
     </div> <!-- /container -->        
-  </div> <!-- /fullpage -->   
+  </div> <!-- /fullpage --> 
+  <div class="panel-wrap">
+    <div class="panel">
+      <h3>Yay! Panels!</h3>
+      <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+
+      <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+      <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+      <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+      <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
+    </div>
+  </div>    
   <?php include_once 'template/car-footer.php'; ?>
   <?php include_once 'template/footer-js.php'; ?>
   <script src="js/vendor/fullPage.js-master/dist/fullpage.min.js" type="text/javascript"></script>
@@ -96,7 +166,7 @@
 
   <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-      anchors: ['exterior', 'interior', 'paint', 'video'],
+      anchors: ['exterior', 'interior', 'paint', 'video', 'specs'],
       responsiveHeight: 600,
       css3: true,
       afterResponsive: function (isResponsive) {
