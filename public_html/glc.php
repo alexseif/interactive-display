@@ -9,6 +9,10 @@
     .content{display: block;}
     .section{text-align:center;}
     .section img{height: 100%; width: auto;}
+
+
+    .grid{width: 80vw; margin: 0 auto;}
+    .grid-cell{width: 14vw;display: inline-block; margin: 0 10px;height: 35vh;}
   </style>
   <div id="fullpage">
     <div class="content"> 
@@ -30,16 +34,42 @@
         <div class="slide"><img src="img/Cars/GLC/Interior/2016_CARS_PICTURES01100.jpg"/></div>
       </div>
       <div id="paint" class="section">
-        <div class="slide"><img src="img/Cars/GLC/Paint/black.jpg"/></div>
-        <div class="slide"><img src="img/Cars/GLC/Paint/brilliant_blue.jpg"/></div>
-        <div class="slide"><img src="img/Cars/GLC/Paint/cavansite_blue.jpg"/></div>
-        <div class="slide"><img src="img/Cars/GLC/Paint/citrine_brown.jpg"/></div>
-        <div class="slide"><img src="img/Cars/GLC/Paint/designo_hyacinth_red_metallic.jpg"/></div>
-        <div class="slide"><img src="img/Cars/GLC/Paint/diamond_silver.jpg"/></div>
-        <div class="slide"><img src="img/Cars/GLC/Paint/iridium_silver.jpg"/></div>
-        <div class="slide"><img src="img/Cars/GLC/Paint/obsidian_black.jpg"/></div>
-        <div class="slide"><img src="img/Cars/GLC/Paint/polar_white.jpg"/></div>
-        <div class="slide"><img src="img/Cars/GLC/Paint/selenite_grey.jpg"/></div>
+        <div class="slide">
+          <div class="grid">
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/black.jpg"/>
+            </div>
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/cavansite_blue.jpg"/>
+            </div>
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/brilliant_blue.jpg"/>
+            </div>
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/citrine_brown.jpg"/>
+            </div>
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/designo_hyacinth_red_metallic.jpg"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/diamond_silver.jpg"/>
+            </div>
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/iridium_silver.jpg"/>
+            </div>
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/obsidian_black.jpg"/>
+            </div>
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/polar_white.jpg"/>
+            </div>
+            <div class="grid-cell">
+              <img class="img-responsive" src="img/Cars/GLC/Paint/selenite_grey.jpg"/>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="video" class="section">
         <div class="slide">
