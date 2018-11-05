@@ -1,10 +1,11 @@
 <?php include_once 'template/head.php'; ?>
 <body>
+  <div id="preloader">
+    <img src="img/mb_car_logo_animation_1.gif"/>
+  </div>
   <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <?php include_once 'template/nav.php'; ?>
-  <?php include_once 'template/car-footer.php'; ?>
   <style>
     /* Side Panel */ 
     /* panel layout mechanics */
@@ -148,8 +149,9 @@
       <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
     </div>
   </div>    
+  <?php include_once 'template/nav.php'; ?>
+  <?php include_once 'template/car-footer.php'; ?>
   <?php include_once 'template/footer-js.php'; ?>
-  <script src="js/vendor/fullPage.js-master/dist/fullpage.min.js" type="text/javascript"></script>
   <script>
     $('.footer-action').click(function (event) {
       event.stopPropagation();
@@ -167,10 +169,10 @@
       css3: true,
       fixedElements: '#header, #footer, #specs-panel',
       menu: '#car-menu',
-      slidesNavigation: true,
-      afterResponsive: function (isResponsive) {
-      }
+      slidesNavigation: true
     });
   </script>
+  <?php include_once 'template/preloader-js.php'; ?>
+
 </body>
 </html>
