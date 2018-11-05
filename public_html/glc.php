@@ -11,7 +11,7 @@
     /* panel layout mechanics */
     .panel-wrap {
       position: fixed;
-      top: 0;
+      top: 91px;
       bottom: 0;
       right: 0;
       width: 30em;
@@ -36,7 +36,7 @@
     Just using a checkbox sibling here
     for simplicity
     */ 
-    [type="checkbox"]:checked ~ .panel-wrap {
+    .panel-open{
       transform: translateX(0%);
     }
 
@@ -130,21 +130,10 @@
         </video>
       </div>
     </div>
-    <div id="" class="section">
-      <div class="slide">
-
-        <input id="clicker" type="checkbox" />
-
-      </div>
-    </div>
   </div> <!-- /fullpage --> 
   <div id="specs-panel" class="panel-wrap">
     <div class="panel">
       <h3>Yay! Panels!</h3>
-      <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
-
-      <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
-      <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
       <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
       <p>Distillery freegan bitters twee.  Food truck dreamcatcher PBR&amp;B chillwave brunch.  Fixie mustache umami Neutra dreamcatcher, Odd Future try-hard master cleanse pork belly iPhone Etsy.  Disrupt kogi Echo Park, wolf DIY literally meditation skateboard gentrify photo booth Carles asymmetrical mumblecore.  Fashion axe 3 wolf moon normcore scenester, bitters drinking vinegar banh mi keytar swag 8-bit.  Tote bag heirloom pickled authentic mlkshk, scenester hoodie shabby chic Kickstarter tattooed church-key Helvetica Wes Anderson.  Ennui craft beer art party, 8-bit chillwave single-origin coffee mlkshk.</p>
     </div>
@@ -159,6 +148,14 @@
       //    $($(this).attr('href')).show('slide', {direction: 'left'});
     });
   </script>
+  <script>
+    $('#specs-btn').click(function () {
+      $('.panel-wrap')
+              .toggleClass('panel-open');
+      $(this).toggleClass('active');
+//      $('#specs-panel').show();
+    });
+  </script>
 
   <script type="text/javascript">
 
@@ -167,7 +164,7 @@
       anchors: ['exterior', 'interior', 'paint', 'video'],
       responsiveHeight: 600,
       css3: true,
-      fixedElements: '#header, #footer, #specs-panel',
+      fixedElements: '#header, #footer',
       menu: '#car-menu',
       slidesNavigation: true
     });

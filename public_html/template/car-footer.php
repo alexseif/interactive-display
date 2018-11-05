@@ -27,7 +27,7 @@
           </a>
         </li>
         <li data-menuanchor="specs">
-          <a href="#specs" class="footer-action">
+          <a href="#specs" class="footer-action" id="specs-btn">
             <span class="glyphicon glyphicon-list-alt"></span>
             Specs
           </a>
