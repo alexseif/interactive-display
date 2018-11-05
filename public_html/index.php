@@ -2,6 +2,14 @@
 <body>
   <style>
     body{background: #fff;}
+    #cars-carousal h3{
+      color: #333;
+      font-family: CorporateACondensedRegular,Times New Roman,Arial,serif;
+      font-weight: 400;
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
   </style>
   <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>

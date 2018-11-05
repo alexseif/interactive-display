@@ -1,32 +1,32 @@
 <div id="footer">
   <div class="footer navbar navbar-inverse ">
     <div id="footer-navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav ">
-        <li class="">
+      <ul class="nav navbar-nav " id="car-menu">
+        <li class="" data-menuanchor="exterior">
           <a href="#exterior" class="footer-action">
             <span class="glyphicon glyphicon-camera"></span>
             Exterior
           </a>
         </li>
-        <li>
+        <li data-menuanchor="interior">
           <a href="#interior" class="footer-action">
             <span class="glyphicon glyphicon-dashboard"></span>
             Interior
           </a>
         </li>
-        <li>
+        <li data-menuanchor="paint">
           <a href="#paint" class="footer-action">
             <span class="glyphicon glyphicon-tint"></span>
             Paint
           </a>
         </li>
-        <li>
+        <li data-menuanchor="video">
           <a href="#video" class="footer-action">
             <span class="glyphicon glyphicon-film"></span>
             Video
           </a>
         </li>
-        <li>
+        <li data-menuanchor="specs">
           <a href="#specs" class="footer-action">
             <span class="glyphicon glyphicon-list-alt"></span>
             Specs

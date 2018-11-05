@@ -10,7 +10,7 @@
         </button>
         <a class="navbar-brand" href="/">
           <img src="img/MB-star_L_3Coffice.png" alt="Mercedes-Benz" height="100%" width="auto"/>
-          <img src="img/MB-word-mark_n_3Coffice.png" alt="Mercedes-Benz" height="100%" width="auto"/>
+          <img src="img/MB-word-mark_n_3Coffice.png" alt="Mercedes-Benz" height="25%" width="auto" style="margin: 5vh 0 0 10vw"/>
         </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">

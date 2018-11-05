@@ -1,0 +1,31 @@
+{
+  "Cars": {
+    "model": "GLC",
+    "cover": null,
+    "exterior": [{
+        "img": {
+          "filename": "img\/Cars\/GLC\/Exterior\/2016_CARS_PICTURES01090.jpg",
+          "alt": ""
+        },
+        "title": false,
+        "text": false
+      }, {
+        "img": {
+          "filename": "img\/Cars\/GLC\/Exterior\/2016_CARS_PICTURES01091.jpg",
+          "alt": ""
+        },
+        "title": false,
+        "text": false
+      }, {
+        "img": {
+          "filename": "img\/Cars\/GLC\/Exterior\/2016_CARS_PICTURES01094.jpg",
+          "alt": ""
+        },
+        "title": false,
+        "text": false
+      }],
+    "interior": null,
+    "video": null,
+    "specs": null
+  }
+}
